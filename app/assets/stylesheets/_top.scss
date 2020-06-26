@@ -23,6 +23,10 @@
         padding-top:5px;
         li{
           font-size:14px;
+          a{
+            text-decoration: none;
+            color:white;
+          }
         }
       }
    
@@ -32,7 +36,7 @@
     background-color:red;
     background-image:url("publicdomainq-0010336luo.jpg");
     background-size:cover;
-    filter: brightness(50%);
+    filter: brightness(70%);
   }
   .sentence{
     height:400px;

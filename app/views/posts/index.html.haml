@@ -1,1 +1,10 @@
-a
+.top-wrapper
+  = render partial: 'layouts/header'
+  .contents
+    .contents_new
+      - @posts.each do |post|
+      
+        = post.title
+        = post.text
+        = post.created_at
+  = render partial: 'layouts/footer'

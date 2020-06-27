@@ -11,7 +11,7 @@
         これから筋トレを始めてみたいという方や、筋トレを始めたけど一人じゃなかなか続かないという方は、当サイトの筋トレ日記を活用し、日々の目標やこなしたメニューをアウトプットし、継続していきましょう。
       .sentence_site-info_link
         - if user_signed_in?
-          = link_to "今日の筋トレ日記を投稿する", new_user_registration_path, class: "btn"
+          = link_to "今日の筋トレ日記を投稿する", new_post_path, class: "btn"
         - else
           = link_to "今すぐ無料で登録する", new_user_registration_path, class: "btn"
   .footer

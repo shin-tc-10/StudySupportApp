@@ -1,6 +1,6 @@
 .header
   .header_logo
-    %h2 Muscle training at home
+    = link_to "Muscle training at home",root_path
     %p 〜自宅で筋トレをしよう〜
   .header_list
     %ul.header_list_menu
@@ -8,7 +8,7 @@
         %li 
           = link_to "logut", destroy_user_session_path, class: "logout", method: :delete
         %li 
-          mt diary post
+          = link_to "mt diary post", posts_path, class: ""
         %li 
           self weight training
         %li 
@@ -17,9 +17,9 @@
           muscle part name
       - else
         %li 
-          = link_to "login", new_user_session_path, class: "header__right--btn"
+          = link_to "login", new_user_session_path, class: ""
         %li 
-          = link_to "sign up", new_user_registration_path, class: "header__right--btn"
+          = link_to "sign up", new_user_registration_path, class: ""
         %li 
           self weight training
         %li 

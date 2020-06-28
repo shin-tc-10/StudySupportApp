@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
 
 .top-wrapper{
   width:100vw;
@@ -11,8 +16,12 @@
       text-align: center;
       font-size:30px;
       font-family: cursive;
-      padding-bottom:50px;
+      padding-bottom:80px;
       padding-top:15px;
+      a {
+        text-decoration: none;
+        color:white;
+      }
       p {
         font-size:13px;
       }
@@ -60,15 +69,15 @@
       .btn {
         margin:0 auto;
         display: inline-block;
+        padding: 0.9em 3em;
         text-decoration: none;
         color: #FFF;
-        width: 300px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        overflow: hidden;
-        background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+        background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
         transition: .4s;
+        font-size: 18px;
+      }
+      .btn:hover{
+        background: #668ad8;
       }
      }
     }

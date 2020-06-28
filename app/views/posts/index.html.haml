@@ -1,10 +1,14 @@
 .top-wrapper
   = render partial: 'layouts/header'
-  .contents
-    .contents_new
-      - @posts.each do |post|
-      
-        = post.title
-        = post.text
-        = post.created_at
+  .i-contents
+    .i-contents_new
+      .i-contents_new_posts
+        - @posts.each do |post|
+          .new-post
+            .new-post_title.posts
+              = post.title
+            .new-post_text.posts
+              = post.text
+            .new-post_created-at.posts
+              = post.created_at
   = render partial: 'layouts/footer'

@@ -3,9 +3,9 @@
 - 筋トレサポートアプリを制作しました。
 - 接続先情報
 - URL :（未デプロイのためgyazoにてご確認ください）
-トップページ
+- トップページ
 https://gyazo.com/3df52e4a3fea8349facb5eb218d36eeb
-タイマー
+- タイマー
 https://gyazo.com/6bc3a66ed11d665ee9264213fde9ed6f
 
 ### 確認用アカウント

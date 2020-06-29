@@ -5,9 +5,11 @@
   }
 
 .wrapper{
-  background:rgb(48, 45, 45);
+  background-image: url("gahag-0077720267-1.jpg");
+  background-size: cover;
   height:450px;
   position:relative;
+  background-position: 10% 45%;
 .container {
   color:white;
   opacity: 0.8;
@@ -42,6 +44,23 @@
 
 .controls >div:hover {
   opacity:0.7;
+}
+}
+.menu{
+  opacity: 0.9;
+  color:white;
+  height:100%;
+  width:280px;
+  background:rgb(29, 28, 28);
+  position:absolute;
+  padding:40px 0 0 40px;
+  p{
+    font-size:20px;
+  }
+ul{
+  li{
+    padding:40px 0 20px 5px;
+  }
 }
 }
 }

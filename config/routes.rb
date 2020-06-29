@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   
   root 'top#index'
   resources :posts, only: [:index, :new, :create]
+  resources :timers,only: [:index]
 end

@@ -1,54 +1,134 @@
 
   
   .top{
-    background:gray;
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
     &_box{
       height:500px;
-      width:1200px;
-      background:white;
+      width:100%;
       display:flex;
       justify-content: center;
       align-items: center; 
       &_1{
         height:400px;
-        width:350px;
-        background:red;
-        margin:0 5px;
+        width:300px;
+        background:white;
+        margin-right:30px;
+        border:1px solid gray;
+        &_image{
+          border:1px solid gray;
+          height:300px;
+          width:250px;
+          background:blue;
+          background-image:url("マッチョのフリーアイコン3.jpeg");
+          background-size:cover;
+          margin:auto;
+          margin-top:30px;
+          background-position: center center;
+        }
+        a{
+          display: inline-block;
+          padding: 0.5em 1em;
+          background: #668ad8;/*ボタン色*/
+          color: #FFF;
+          border-bottom: solid 4px #627295;
+          border-radius: 3px;
+          width:200px;
+          margin: 10px 0 10px 50px;
+          text-align:center;
+          text-decoration: none;
+        }
+        a:active{
+          -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+          border-bottom: none;
+      }
       }
       &_2{
         height:400px;
-        width:350px;
-        background:blue;
-        margin-right:5px;
+        width:300px;
+        background:white;
+        margin-right:30px;
+        border:1px solid gray;
+        a{
+          display: inline-block;
+          padding: 0.5em 1em;
+          background: #668ad8;/*ボタン色*/
+          color: #FFF;
+          border-bottom: solid 4px #627295;
+          border-radius: 3px;
+          width:200px;
+          margin: 10px 0 10px 50px;
+          text-align:center;
+          text-decoration: none;
+        }
+        a:active{
+          -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+          border-bottom: none;
+      }
       }
       &_3{
       height:400px;
-      width:350px;
-      background:green;
-      margin-right:5px;
+      width:300px;
+      background:white;
+      margin-right:30px;
+      border:1px solid gray;
+      a{
+        display: inline-block;
+        padding: 0.5em 1em;
+        background: #668ad8;/*ボタン色*/
+        color: #FFF;
+        border-bottom: solid 4px #627295;
+        border-radius: 3px;
+        width:200px;
+        margin: 10px 0 10px 50px;
+        text-align:center;
+        text-decoration: none;
+      }
+      a:active{
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+    }
     }
     &_4{
       height:400px;
-      width:350px;
-      background:yellow;
-      margin-right:5px;
+      width:300px;
+      background:white;
+      border:1px solid gray;
+      a{
+        display: inline-block;
+        padding: 0.5em 1em;
+        background: #668ad8;/*ボタン色*/
+        color: #FFF;
+        border-bottom: solid 4px #627295;
+        border-radius: 3px;
+        width:200px;
+        margin: 10px 0 10px 50px;
+        text-align:center;
+        text-decoration: none;
+      }
+      a:active{
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+    }
     }
     }
   }
    
   .footer{
-    background-color:black;
+    background-color:rgb(24, 133, 223);
     color:white;
     text-align: center;
-    line-height:100px;
+    line-height:60px;
     font-family: cursive;
     position: fixed;            /* フッターの固定 */
     bottom: 0px;                /* 位置(下0px) */
     left: 0px;                  /* 位置(左0px) */
     width: 100%;                /* 横幅100%　*/
-    height: 80px;
+    height: 60px;
   }

@@ -1,18 +1,9 @@
+= render partial: 'layouts/header'
 .top-wrapper
-  = render partial: 'layouts/header'
-  .image
-  .sentence
-    .sentence_site-info
-      %h2 〜サイト案内〜
-      %p.sentence_site-info_p 
-        当サイトは自宅で筋トレをする方に向けて作られた、筋トレのモチベーションを維持するためのコミュニティサイトです。
-        %br
-        %br
-        これから筋トレを始めてみたいという方や、筋トレを始めたけど一人じゃなかなか続かないという方は、当サイトの筋トレ日記を活用し、日々の目標やこなしたメニューをアウトプットし、継続していきましょう。
-      .sentence_site-info_link
-        - if user_signed_in?
-          = link_to "今日の筋トレ日記を投稿する", new_post_path, class: "btn"
-        - else
-          = link_to "今すぐ無料で登録する", new_user_registration_path, class: "btn"
-  .footer
-    ©2020 Muscle training at home
+  .top-wrapper_btn
+    - if user_signed_in?
+      = link_to "今日の筋トレ日記を投稿する", new_post_path, class: "btn"
+    - else
+      = link_to "今すぐ無料で登録する", new_user_registration_path, class: "btn"
+.footer
+  ©2020 Muscle training at home

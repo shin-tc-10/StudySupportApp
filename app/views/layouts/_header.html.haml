@@ -1,37 +1,14 @@
 .header
-  .header_logo
-    = link_to "Muscle training at home",root_path
-    %p 〜自宅で筋トレをしよう〜
-  .header_list
-    %ul.header_list_menu
-      - if user_signed_in?
-        %li 
-          = link_to "logut", destroy_user_session_path, class: "logout", method: :delete
-        %li 
-          = link_to "mt diary post", posts_path, class: ""
-        %li.swt
-          = link_to "self weight training", timers_path, class: ""
-          %ul.header_list_menu_second
-            %li
-              = link_to "self weight training", timers_path, class: "swt2"
-            %li
-              = link_to "self weight training", timers_path, class: ""
-            %li
-              = link_to "self weight training", timers_path, class: ""
-
-        %li 
-          protein comparison
-        %li 
-          muscle part name
-      - else
-        %li 
-          = link_to "login", new_user_session_path, class: ""
-        %li 
-          = link_to "sign up", new_user_registration_path, class: ""
-        %li 
-          = link_to "self weight training", timers_path, class: ""
-        %li 
-          protein comparison
-        %li 
-          muscle part name
+  %h1
+    = link_to "Muscle training at home",root_path, class: "top-link"
+  %ul.header_list
+    - if user_signed_in?
+      %li 
+        = link_to "logut", destroy_user_session_path, class: "logout", method: :delete
+    - else
+      %li 
+        = link_to "login", new_user_session_path, class: ""
+      %li 
+        = link_to "sign up", new_user_registration_path, class: ""
+    
           

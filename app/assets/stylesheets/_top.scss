@@ -18,14 +18,15 @@
         margin-right:30px;
         border:1px solid gray;
         &_image{
-          border:1px solid gray;
+          border-top:1px solid gray;
+          border-bottom:1px solid gray;
           height:300px;
-          width:250px;
+          width:100%;
           background:blue;
           background-image:url("マッチョのフリーアイコン3.jpeg");
           background-size:cover;
           margin:auto;
-          margin-top:30px;
+          margin-top:20px;
           background-position: center center;
         }
         a{
@@ -36,7 +37,7 @@
           border-bottom: solid 4px #627295;
           border-radius: 3px;
           width:200px;
-          margin: 10px 0 10px 50px;
+          margin: 20px 0 10px 50px;
           text-align:center;
           text-decoration: none;
         }
@@ -52,6 +53,18 @@
         background:white;
         margin-right:30px;
         border:1px solid gray;
+        &_image{
+          border-top:1px solid gray;
+          border-bottom:1px solid gray;
+          height:300px;
+          width:100%;
+          background:blue;
+          background-image:url("えんぴつ付きのノートアイコン.jpeg");
+          background-size:cover;
+          margin:auto;
+          margin-top:20px;
+          background-position: center center;
+        }
         a{
           display: inline-block;
           padding: 0.5em 1em;
@@ -60,7 +73,7 @@
           border-bottom: solid 4px #627295;
           border-radius: 3px;
           width:200px;
-          margin: 10px 0 10px 50px;
+          margin: 20px 0 10px 50px;
           text-align:center;
           text-decoration: none;
         }
@@ -76,6 +89,18 @@
       background:white;
       margin-right:30px;
       border:1px solid gray;
+      &_image{
+        border-top:1px solid gray;
+        border-bottom:1px solid gray;
+        height:300px;
+        width:100%;
+        background:blue;
+        background-image:url("羽根のペンの無料アイコン素材.jpeg");
+        background-size:cover;
+        margin:auto;
+        margin-top:20px;
+        background-position: center center;
+      }
       a{
         display: inline-block;
         padding: 0.5em 1em;
@@ -84,7 +109,7 @@
         border-bottom: solid 4px #627295;
         border-radius: 3px;
         width:200px;
-        margin: 10px 0 10px 50px;
+        margin: 20px 0 10px 50px;
         text-align:center;
         text-decoration: none;
       }
@@ -99,6 +124,18 @@
       width:300px;
       background:white;
       border:1px solid gray;
+      &_image{
+        border-top:1px solid gray;
+        border-bottom:1px solid gray;
+        height:300px;
+        width:100%;
+        background:blue;
+        background-image:url("スクイズボトル.jpeg");
+        background-size:cover;
+        margin:auto;
+        margin-top:20px;
+        background-position: center center;
+      }
       a{
         display: inline-block;
         padding: 0.5em 1em;
@@ -107,7 +144,7 @@
         border-bottom: solid 4px #627295;
         border-radius: 3px;
         width:200px;
-        margin: 10px 0 10px 50px;
+        margin: 20px 0 10px 50px;
         text-align:center;
         text-decoration: none;
       }

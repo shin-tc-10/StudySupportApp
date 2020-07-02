@@ -1,9 +1,5 @@
 = render partial: 'layouts/header'
 .top-wrapper
-  .top-wrapper_btn
-    - if user_signed_in?
-      = link_to "今日の筋トレ日記を投稿する", new_post_path, class: "btn"
-    - else
-      = link_to "今すぐ無料で登録する", new_user_registration_path, class: "btn"
+
 .footer
   ©2020 Muscle training at home

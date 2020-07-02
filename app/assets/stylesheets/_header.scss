@@ -1,0 +1,43 @@
+.header{
+  position: fixed; 
+  background-color:black;
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;                  /* 位置(右0px) */
+  width: 100%;                /* 横幅100%　*/
+  height: 140px;   
+  color:white;
+  &_logo{
+    text-align: center;
+    font-size:30px;
+    font-family: cursive;
+    a {
+      text-decoration: none;
+      color:white;
+    }
+    p {
+      font-size:13px;
+    }
+  }
+    &_list_menu{
+      display:flex;
+      justify-content: space-evenly;
+      li{
+        font-size:14px;
+        a{
+          text-decoration: none;
+          color:white;
+        }
+      }
+      .swt{
+        position:relative;
+        display:flex;
+      .header_list_menu_second {
+        display:none;
+        position:absolute;
+      }
+     }
+      .swt:hover .header_list_menu_second {
+        display:inline-block;
+      }
+    }
+ }

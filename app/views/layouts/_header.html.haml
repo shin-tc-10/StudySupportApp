@@ -9,8 +9,16 @@
           = link_to "logut", destroy_user_session_path, class: "logout", method: :delete
         %li 
           = link_to "mt diary post", posts_path, class: ""
-        %li 
+        %li.swt
           = link_to "self weight training", timers_path, class: ""
+          %ul.header_list_menu_second
+            %li
+              = link_to "self weight training", timers_path, class: "swt2"
+            %li
+              = link_to "self weight training", timers_path, class: ""
+            %li
+              = link_to "self weight training", timers_path, class: ""
+
         %li 
           protein comparison
         %li 

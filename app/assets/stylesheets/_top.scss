@@ -1,68 +1,12 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  }
 
-.top-wrapper{
-  width:100vw;
-  // height:100vh;
-  .header{
-    height:150px;
-    background-color:black;
-    color:white;
-    &_logo{
-      height:30px;
-      text-align: center;
-      font-size:30px;
-      font-family: cursive;
-      padding-bottom:80px;
-      padding-top:15px;
-      a {
-        text-decoration: none;
-        color:white;
-      }
-      p {
-        font-size:13px;
-      }
-    }
-      &_list_menu{
-        display:flex;
-        justify-content: space-evenly;
-        padding-top:5px;
-        li{
-          font-size:14px;
-          a{
-            text-decoration: none;
-            color:white;
-          }
-        }
-      }
-   
-  }
-  .image{
-    height:700px;
-    background-color:red;
-    background-image:url("publicdomainq-0010336luo.jpg");
-    background-size:cover;
-    filter: brightness(70%);
-  }
-  .sentence{
-    height:400px;
-    background-color:rgb(34, 33, 33);
-    color:white;
-    &_site-info{
-      height:400px;
-      padding-top:20px;
-      &_p{
-        width:600px;
-        margin: 0 auto;
-        margin-top:20px;
-      }
-      h2 {
-        text-align: center;
-      }
-      &_link{
+  
+  .top-wrapper{
+    background:black;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+      &_btn{
         margin:0 auto;
         text-align: center;
         margin-top:70px;
@@ -82,13 +26,15 @@
      }
     }
    
-  }
   .footer{
-    height:100px;
     background-color:black;
     color:white;
     text-align: center;
     line-height:100px;
     font-family: cursive;
+    position: fixed;            /* フッターの固定 */
+    bottom: 0px;                /* 位置(下0px) */
+    left: 0px;                  /* 位置(左0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 100px;
   }
-}

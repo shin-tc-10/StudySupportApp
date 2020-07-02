@@ -6,18 +6,16 @@
   vertical-align:  middle;
   &_new{
     width:700px;
-    background-color:rgb(31, 127, 190);
-    padding: 30px 15px 20px 25px; 
     margin:auto;
+    border:1px solid skyblue;
     &_posts{
       height:450px;
-      width:650px;
       background-color: white;
       overflow: scroll;
       padding:10px 0 0 10px;
       .new-post{
         height:100px;
-        width:100%;
+        width:650;
         padding:10px 0 0 10px;
         border:1px solid black;
         margin-bottom:5px;

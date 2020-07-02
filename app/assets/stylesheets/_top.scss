@@ -1,11 +1,43 @@
 
   
-  .top-wrapper{
+  .top{
     background:black;
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
+    &_box{
+      height:500px;
+      width:1200px;
+      background:white;
+      display:flex;
+      justify-content: center;
+      align-items: center; 
+      &_1{
+        height:400px;
+        width:350px;
+        background:red;
+        margin:0 5px;
+      }
+      &_2{
+        height:400px;
+        width:350px;
+        background:blue;
+        margin-right:5px;
+      }
+      &_3{
+      height:400px;
+      width:350px;
+      background:green;
+      margin-right:5px;
+    }
+    &_4{
+      height:400px;
+      width:350px;
+      background:yellow;
+      margin-right:5px;
+    }
+    }
   }
    
   .footer{
@@ -18,5 +50,6 @@
     bottom: 0px;                /* 位置(下0px) */
     left: 0px;                  /* 位置(左0px) */
     width: 100%;                /* 横幅100%　*/
-    height: 100px;
+    height: 80px;
+    border-top:1px solid white;
   }

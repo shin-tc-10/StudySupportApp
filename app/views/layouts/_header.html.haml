@@ -4,11 +4,17 @@
   %ul.header_list
     - if user_signed_in?
       %li 
-        = link_to "logut", destroy_user_session_path, class: "logout", method: :delete
+        = link_to "ログアウト", destroy_user_session_path, class: "logout", method: :delete
+      %li
+        = link_to "筋トレをする",timers_path ,class:"btn1"
+      %li
+        = link_to "筋トレ日記投稿", new_post_path, class:"btn1"
+      %li
+        = link_to "筋トレ日記一覧",posts_path, class:"btn1"
+      %li
+        = link_to "プロテイン比較表",class:"btn1"
     - else
       %li 
-        = link_to "login", new_user_session_path, class: ""
+        = link_to "ログイン", new_user_session_path, class: ""
       %li 
-        = link_to "sign up", new_user_registration_path, class: ""
-    
-          
+        = link_to "新規登録", new_user_registration_path, class: ""

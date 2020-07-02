@@ -1,26 +1,14 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  }
-
 
 .i-contents{
-  height:calc(100vh - 150px);
+  height:100vh;
   width:100vw;
-  background-color:gray;
   display:  table-cell;
   vertical-align:  middle;
-  margin:auto;
-  background-image: url("edgar-chaparro-sHfo3WOgGTU-unsplash.jpg");
-  background-size: cover;
   &_new{
-    height:500px;
     width:700px;
-    background-color:rgb(52, 47, 47);
-    margin:auto;
+    background-color:rgb(31, 127, 190);
     padding: 30px 15px 20px 25px; 
-    opacity: 0.9;
+    margin:auto;
     &_posts{
       height:450px;
       width:650px;

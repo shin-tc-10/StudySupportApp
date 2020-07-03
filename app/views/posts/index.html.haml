@@ -10,4 +10,16 @@
             = post.text
           .new-post_created-at.posts
             = post.created_at
+<<<<<<< Updated upstream
+=======
+          %ul.new-post_edit_posts
+            %li
+              = link_to "詳細", post_path(post.id)
+            %li
+              = link_to "編集", edit_post_path(post.id),method: :get
+            %li
+              = link_to "削除", post_path(post.id),method: :delete
+
+
+>>>>>>> Stashed changes
 = render partial: 'layouts/footer'

@@ -19,16 +19,21 @@
         padding:10px 0 0 10px;
         border:1px solid black;
         margin-bottom:5px;
+        position:relative;
         &_title{
           font-size:20px;
         }
         &_created-at{
           font-size:13px;
-          text-align:right;
           padding-right:5px;
         }
         .posts{
           padding-bottom:5px;
+        }
+        &_edit_posts{
+          position:absolute;
+          top:0px;
+          right:5px;
         }
       }
     }

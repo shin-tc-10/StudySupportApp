@@ -4,5 +4,5 @@
     = form_with(model: @post, local: true) do |form|
       = form.text_field :title, placeholder: "ここにタイトルを入力", class:"title"
       = form.text_area :text, placeholder: "ここに本文を入力", class:"text"
-      = form.submit "投稿する",class:"btn"
+      = form.submit "編集を完了する",class:"btn"
 = render partial: 'layouts/footer'

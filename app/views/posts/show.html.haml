@@ -1,0 +1,32 @@
+= render partial: 'layouts/header'
+.i-contents
+  .i-contents_new
+    %h1 投稿詳細ページ
+    .i-contents_new_posts
+      .new-post
+        .new-post_title.posts
+          = @post.title
+        .new-post_text.posts
+          = @post.text
+        .new-post_created-at.posts
+          = @post.created_at
+        %i.fas.fa-angle-down.fa-lg{style: "color: skyblue;"}
+          %ul.new-post_edit_posts
+            %li
+              = link_to "編集", edit_post_path(@post.id),method: :get
+            %li
+              = link_to "削除", post_path(@post.id),method: :delete
+    .container
+      - if current_user
+        = form_with(model: [@post, @comment], local: true) do |form|
+          = form.text_area :content, placeholder: "コメントする", rows: "2"
+          = form.submit "SEND"
+      .comments
+        %h4 ＜コメント一覧＞
+        - if @comments
+          - @comments.each do |comment|
+            %p
+              = comment.content
+
+
+= render partial: 'layouts/footer'

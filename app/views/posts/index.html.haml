@@ -6,17 +6,16 @@
         .new-post
           .new-post_title.posts
             = post.title
-          .new-post_text.posts
-            = post.text
           .new-post_created-at.posts
             = post.created_at
-          %ul.new-post_edit_posts
-            %li
-              = link_to "詳細", post_path(post.id)
-            %li
-              = link_to "編集", edit_post_path(post.id),method: :get
-            %li
-              = link_to "削除", post_path(post.id),method: :delete
+          %i.fas.fa-angle-down.fa-lg{style: "color: skyblue;"}
+            %ul.new-post_edit_posts
+              %li
+                = link_to "詳細", post_path(post.id)
+              %li
+                = link_to "編集", edit_post_path(post.id),method: :get
+              %li
+                = link_to "削除", post_path(post.id),method: :delete
 
 
 = render partial: 'layouts/footer'

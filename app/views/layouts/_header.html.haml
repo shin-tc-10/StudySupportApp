@@ -6,13 +6,11 @@
       %li 
         = link_to "ログアウト", destroy_user_session_path, class: "logout", method: :delete
       %li
-        = link_to "筋トレをする",timers_path ,class:"btn1"
+        = link_to "筋トレタイマー",timers_path ,class:"btn1"
       %li
         = link_to "筋トレ日記投稿", new_post_path, class:"btn1"
       %li
         = link_to "筋トレ日記一覧",posts_path, class:"btn1"
-      %li
-        = link_to "プロテイン比較表",class:"btn1"
     - else
       %li 
         = link_to "ログイン", new_user_session_path, class: ""

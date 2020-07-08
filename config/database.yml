@@ -48,8 +48,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-#半角スペース２個分の空白を開ける
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+  database: mtathome_app_production
+  username: mtathome_app
+  password: <%= ENV['MTATHOME_APP_DATABASE_PASSWORD'] %>

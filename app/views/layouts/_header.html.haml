@@ -1,16 +1,16 @@
 .header
   %h1
-    = link_to "Muscle training at home",root_path, class: "top-link"
+    = link_to "Study support app",root_path, class: "top-link"
   %ul.header_list
     - if user_signed_in?
       %li 
         = link_to "ログアウト", destroy_user_session_path, class: "logout", method: :delete
       %li
-        = link_to "筋トレタイマー",timers_path ,class:"btn1"
+        = link_to "学習タイマー",timers_path ,class:"btn1"
       %li
-        = link_to "筋トレ日記投稿", new_post_path, class:"btn1"
+        = link_to "アウトプット", new_post_path, class:"btn1"
       %li
-        = link_to "筋トレ日記一覧",posts_path, class:"btn1"
+        = link_to "アウトプット一覧",posts_path, class:"btn1"
     - else
       %li 
         = link_to "ログイン", new_user_session_path, class: ""

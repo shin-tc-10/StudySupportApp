@@ -1,0 +1,2 @@
+class Reacttodo < ApplicationRecord
+end

@@ -3,11 +3,14 @@
   .top_box
     .top_box_1
       .top_box_1_image
-      = link_to "学習タイマー",timers_path ,class:"btn1"
+      = link_to "Todoリスト",reacttodos_path ,class:"btn1"
     .top_box_2
+      .top_box_1_image
+      = link_to "学習タイマー",timers_path ,class:"btn1"
+    .top_box_3
       .top_box_2_image
       = link_to "アウトプット", new_post_path, class:"btn1"
-    .top_box_3
+    .top_box_4
       .top_box_3_image
       = link_to "アウトプット一覧",posts_path, class:"btn1"
 .footer
